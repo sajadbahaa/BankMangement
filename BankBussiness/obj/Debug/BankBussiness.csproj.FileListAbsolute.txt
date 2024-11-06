@@ -1,0 +1,9 @@
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Debug\BankBussiness.dll
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Debug\BankBussiness.pdb
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Debug\BankData.dll
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Debug\BankData.pdb
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Debug\BankBussiness.csproj.AssemblyReference.cache
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Debug\BankBussiness.csproj.CoreCompileInputs.cache
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Debug\BankBuss.A0667879.Up2Date
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Debug\BankBussiness.dll
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Debug\BankBussiness.pdb

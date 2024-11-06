@@ -1,0 +1,9 @@
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Release\BankBussiness.dll
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Release\BankBussiness.pdb
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Release\BankData.dll
+D:\Projects\ProjectBankSystem\BankBussiness\bin\Release\BankData.pdb
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Release\BankBussiness.csproj.AssemblyReference.cache
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Release\BankBussiness.csproj.CoreCompileInputs.cache
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Release\BankBuss.A0667879.Up2Date
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Release\BankBussiness.dll
+D:\Projects\ProjectBankSystem\BankBussiness\obj\Release\BankBussiness.pdb

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{957C5F21-01A9-486B-8D31-3820DE5D2F7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankSystem</RootNamespace>
+    <AssemblyName>BankSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clients\Controls\ctrlClientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clients\Controls\ctrlClientInfo.Designer.cs">
+      <DependentUpon>ctrlClientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\Controls\ctrlClientInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clients\Controls\ctrlClientInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlClientInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\Controls\ctrlClientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clients\Controls\ctrlClientList.Designer.cs">
+      <DependentUpon>ctrlClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmAddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmAddClient.Designer.cs">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmAllClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmAllClientList.Designer.cs">
+      <DependentUpon>frmAllClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmClientsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmClientsList.Designer.cs">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmDeletClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmDeletClient.Designer.cs">
+      <DependentUpon>frmDeletClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmFindClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmFindClient.Designer.cs">
+      <DependentUpon>frmFindClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmShowClientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmShowClientInfo.Designer.cs">
+      <DependentUpon>frmShowClientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\frmUpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\frmUpdateClient.Designer.cs">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\clsFormat.cs" />
+    <Compile Include="GlobalClasses\clsUtil.cs" />
+    <Compile Include="GlobalClasses\clsVaildation.cs" />
+    <Compile Include="Login\frmLoginClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLoginClient.Designer.cs">
+      <DependentUpon>frmLoginClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\frmMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\frmMainScreen.Designer.cs">
+      <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\clsGlobal.cs" />
+    <Compile Include="Login\LoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginUser.Designer.cs">
+      <DependentUpon>LoginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessgaeDenieAccess\frmDenieAccress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessgaeDenieAccess\frmDenieAccress.Designer.cs">
+      <DependentUpon>frmDenieAccress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardWithFilter.Designer.cs">
+      <DependentUpon>ctrlPersonCardWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonInfo.Designer.cs">
+      <DependentUpon>ctrlPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmAddPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmAddPerson.Designer.cs">
+      <DependentUpon>frmAddPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmFindPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmFindPerson.Designer.cs">
+      <DependentUpon>frmFindPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmPeopleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmPeopleList.Designer.cs">
+      <DependentUpon>frmPeopleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmShowPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmShowPersonInfo.Designer.cs">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransActions\DepositAndWithDraw\frmDepoisAndWithDrawtScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActions\DepositAndWithDraw\frmDepoisAndWithDrawtScreen.Designer.cs">
+      <DependentUpon>frmDepoisAndWithDrawtScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransActions\ShareScreen\frmShareScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActions\ShareScreen\frmShareScreen.Designer.cs">
+      <DependentUpon>frmShareScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\ctrlShowHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transfer\ctrlShowHistory.Designer.cs">
+      <DependentUpon>ctrlShowHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\frmAllTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\frmAllTransfer.Designer.cs">
+      <DependentUpon>frmAllTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\frmTransferHisory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\frmTransferHisory.Designer.cs">
+      <DependentUpon>frmTransferHisory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\frmTransferScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\frmTransferScreen.Designer.cs">
+      <DependentUpon>frmTransferScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ChangePassword\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\ChangePassword\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlUserInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlUserInfoCard.Designer.cs">
+      <DependentUpon>ctrlUserInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.Designer.cs">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUsersList.Designer.cs">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clients\Controls\ctrlClientInfo.resx">
+      <DependentUpon>ctrlClientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\Controls\ctrlClientInfoWithFilter.resx">
+      <DependentUpon>ctrlClientInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\Controls\ctrlClientList.resx">
+      <DependentUpon>ctrlClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmAllClientList.resx">
+      <DependentUpon>frmAllClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmClientsList.resx">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmDeletClient.resx">
+      <DependentUpon>frmDeletClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmFindClient.resx">
+      <DependentUpon>frmFindClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmShowClientInfo.resx">
+      <DependentUpon>frmShowClientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\frmUpdateClient.resx">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLoginClient.resx">
+      <DependentUpon>frmLoginClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\frmMainScreen.resx">
+      <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginUser.resx">
+      <DependentUpon>LoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessgaeDenieAccess\frmDenieAccress.resx">
+      <DependentUpon>frmDenieAccress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrlPersonCardWithFilter.resx">
+      <DependentUpon>ctrlPersonCardWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrlPersonInfo.resx">
+      <DependentUpon>ctrlPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmAddPerson.resx">
+      <DependentUpon>frmAddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmFindPerson.resx">
+      <DependentUpon>frmFindPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmPeopleList.resx">
+      <DependentUpon>frmPeopleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmShowPersonInfo.resx">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TransActions\DepositAndWithDraw\frmDepoisAndWithDrawtScreen.resx">
+      <DependentUpon>frmDepoisAndWithDrawtScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransActions\ShareScreen\frmShareScreen.resx">
+      <DependentUpon>frmShareScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\ctrlShowHistory.resx">
+      <DependentUpon>ctrlShowHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\frmAllTransfer.resx">
+      <DependentUpon>frmAllTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\frmTransferHisory.resx">
+      <DependentUpon>frmTransferHisory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\frmTransferScreen.resx">
+      <DependentUpon>frmTransferScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ChangePassword\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Controls\ctrlUserInfoCard.resx">
+      <DependentUpon>ctrlUserInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUserInfo.resx">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUsersList.resx">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankBussiness\BankBussiness.csproj">
+      <Project>{3f12e985-9f3d-4c35-ba6f-e417a2c48c3b}</Project>
+      <Name>BankBussiness</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnKnownPerson.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

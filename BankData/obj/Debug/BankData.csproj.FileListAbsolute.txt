@@ -1,0 +1,6 @@
+D:\Projects\ProjectBankSystem\BankData\bin\Debug\BankData.dll
+D:\Projects\ProjectBankSystem\BankData\bin\Debug\BankData.pdb
+D:\Projects\ProjectBankSystem\BankData\obj\Debug\BankData.csproj.AssemblyReference.cache
+D:\Projects\ProjectBankSystem\BankData\obj\Debug\BankData.csproj.CoreCompileInputs.cache
+D:\Projects\ProjectBankSystem\BankData\obj\Debug\BankData.dll
+D:\Projects\ProjectBankSystem\BankData\obj\Debug\BankData.pdb
